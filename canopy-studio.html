@@ -1,0 +1,2231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src 'self' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>树冠风场工作室</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}body.background-mode{padding:0;background:#fff}body.background-mode iframe{height:100vh}</style>
+</head>
+<body class="background-mode">
+<iframe sandbox="allow-scripts allow-same-origin" referrerpolicy="no-referrer" title="树冠风场工作室" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src &#x27;self&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;树冠风场工作室&lt;/title&gt;
+&lt;style&gt;:root {
+  color-scheme: light dark;
+  background-color: var(
+    --background,
+    var(--color-background-primary, light-dark(rgb(255 255 255), rgb(24 24 24)))
+  ) !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: var(
+    --color-background-primary,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --card: color-mix(in oklab, var(--foreground) 5%, var(--background));
+  --card-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --popover: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255), rgb(45 45 45))
+  );
+  --popover-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --primary: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --primary-foreground: var(
+    --color-text-inverse,
+    light-dark(rgb(255 255 255), rgb(13 13 13))
+  );
+  --secondary: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%))
+  );
+  --secondary-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: var(
+    --color-text-secondary,
+    light-dark(rgb(26 28 31 / 49.4%), rgb(255 255 255 / 49.8%))
+  );
+  --accent: var(
+    --color-background-info,
+    light-dark(rgb(229 242 255), rgb(13 39 63))
+  );
+  --accent-foreground: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --destructive: var(
+    --color-text-warning,
+    light-dark(rgb(226 85 7), rgb(255 133 73))
+  );
+  --border: var(
+    --color-border-secondary,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+  --input: var(
+    --color-border-primary,
+    light-dark(
+      rgb(26 28 31 / 11.8%),
+      color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+    )
+  );
+  --ring: var(
+    --color-ring-primary,
+    light-dark(rgb(51 156 255), rgb(131 195 255 / 76%))
+  );
+  --font-size-base: var(--font-text-md-size, 14px);
+  --blue: light-dark(rgb(51 156 255), rgb(51 156 255));
+  --orange: light-dark(rgb(226 85 7), rgb(251 106 34));
+  --green: light-dark(rgb(0 162 64), rgb(64 201 119));
+  --red: light-dark(rgb(224 46 42), rgb(255 103 100));
+  --purple: light-dark(rgb(146 79 247), rgb(173 123 249));
+  --yellow: light-dark(rgb(255 195 0), rgb(255 210 64));
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(rgb(243 136 59), rgb(245 154 86));
+  --viz-series-3: light-dark(rgb(93 201 119), rgb(116 213 139));
+  --viz-series-4: light-dark(rgb(235 119 177), rgb(240 143 192));
+  --viz-series-5: light-dark(rgb(155 121 236), rgb(170 145 239));
+  --viz-series-6: light-dark(rgb(58 185 177), rgb(90 203 194));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans: -apple-system, system-ui, &quot;Segoe UI&quot;, sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 430;
+  --font-weight-medium: 500;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --radius: var(--border-radius-lg, 12.5px);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 1.6);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+}
+
+:root[data-theme=&quot;light&quot;] {
+  color-scheme: light;
+}
+
+:root[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html &gt; body {
+  /* Preserve MCP aliases for older inline renderers without creating :root cycles. */
+  --color-background-primary: var(
+    --background,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --color-text-primary: var(
+    --foreground,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --color-border-secondary: var(
+    --border,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+
+  margin: 0;
+  padding: 5px;
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans) !important;
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: pointer;
+  font-weight: var(--font-weight-medium, 500);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+b,
+strong,
+th {
+  font-weight: var(--font-weight-medium);
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  corner-shape: superellipse(1.5);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+}
+
+.table-responsive &gt; .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead th {
+  padding-block: 8px;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 16%, transparent);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 6px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align=&quot;right&quot;]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align=&quot;center&quot;]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  corner-shape: superellipse(1.5);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+#widget &gt; :not(.card, .progress) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--popover-foreground);
+  background: var(--popover);
+  box-shadow: none;
+  font-size: var(--font-size-tooltip);
+  line-height: var(--line-height-tooltip);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress {
+  display: flex;
+  height: 6px;
+  margin-block: calc((var(--line-height-normal, 1.5em) - 6px) / 2);
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+}
+
+.progress-bar {
+  height: 100%;
+  flex-shrink: 0;
+  border: 0;
+  background: var(--viz-series-1);
+}
+
+.viz-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  color: var(--accent-foreground);
+  background: var(--accent);
+  font-weight: var(--font-weight-medium);
+}
+
+small,
+.text-small,
+.viz-badge {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls &gt; .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+.btn {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn-primary {
+  border-color: transparent;
+  color: var(--primary-foreground);
+  background: var(--foreground);
+  background-clip: padding-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(in srgb, var(--primary-foreground) 50%, transparent);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: padding-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--foreground);
+  background: var(--secondary);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type=&quot;file&quot;] {
+  padding: 0;
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control[type=&quot;file&quot;]::file-selector-button {
+  min-height: 26px;
+  margin-right: 8px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+}
+
+.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type=&quot;color&quot;] {
+  width: 40px;
+  height: 28px;
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  corner-shape: superellipse(1.5);
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 72px;
+  padding: 8px 10px;
+  resize: vertical;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 32px 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted-foreground) 50%),
+    linear-gradient(135deg, var(--muted-foreground) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) 50%,
+    calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-select:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-check {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  border-color: var(--input);
+  border-radius: var(--radius-sm);
+  corner-shape: superellipse(1.5);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:checked {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: &quot;&quot;;
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+}
+
+.form-check-input[type=&quot;radio&quot;] {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+}
+
+.form-check-input[type=&quot;radio&quot;]:checked {
+  border: 2px solid var(--primary);
+  background:
+    radial-gradient(circle, var(--primary-foreground) 0 2.5px, transparent 3px),
+    var(--primary);
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+  box-shadow: var(--shadow-sm);
+  content: &quot;&quot;;
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--primary);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 28px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  accent-color: var(--primary);
+  background: linear-gradient(
+      color-mix(in srgb, var(--foreground) 7%, transparent),
+      color-mix(in srgb, var(--foreground) 7%, transparent)
+    )
+    center / 100% 2px no-repeat;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-webkit-slider-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range::-moz-range-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+  [aria-pressed=&quot;true&quot;],
+  [aria-selected=&quot;true&quot;],
+  .is-selected
+) {
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  background: var(--primary);
+}
+
+.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+@media (pointer: coarse) {
+  .btn,
+  .form-control,
+  .form-select {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: max(16px, var(--font-size-normal));
+  }
+
+  .form-control[type=&quot;file&quot;]::file-selector-button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .form-control-color[type=&quot;color&quot;] {
+    width: 44px;
+    height: 44px;
+  }
+
+  .form-control:is(
+    [type=&quot;date&quot;],
+    [type=&quot;datetime-local&quot;],
+    [type=&quot;month&quot;],
+    [type=&quot;time&quot;],
+    [type=&quot;week&quot;]
+  ) {
+    min-width: 0;
+    max-width: 100%;
+    padding-block: 8px;
+  }
+
+  .form-check {
+    min-height: 44px;
+    padding-inline: 15px;
+  }
+
+  .form-check-input {
+    position: relative;
+  }
+
+  .form-check-input::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 44px;
+    height: 44px;
+    content: &quot;&quot;;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-check-label {
+    display: inline-flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+  }
+
+  .form-range {
+    height: 44px;
+    touch-action: pan-y;
+  }
+
+  .form-range::-webkit-slider-runnable-track {
+    height: 44px;
+  }
+
+  .form-range::-moz-range-track {
+    height: 44px;
+  }
+
+  .form-range::-webkit-slider-thumb {
+    margin-top: 12px;
+  }
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget &gt; svg {
+  width: 100%;
+}
+
+/* Model-authored chart rules can otherwise stretch icons after these styles load. */
+svg.lucide {
+  display: block;
+  width: 16px !important;
+  height: 16px !important;
+  flex: none;
+  margin: 0 !important;
+  stroke-width: 1.6;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+
+html&gt;body{padding:0}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;style&gt;
+/* Public background: hide editing UI before the first paint, including slow loads. */
+html, body { margin: 0 !important; padding: 0 !important; background: #fff !important; overflow: hidden !important; color-scheme: light; }
+.canopy-control-lab__head, .canopy-control-lab__controls, .canopy-control-lab__status, .canopy-control-lab__hint { display: none !important; }
+#canopy-control-lab, .canopy-control-lab__stage, .canopy-control-lab__stage canvas { height: 100vh !important; min-height: 100vh !important; }
+&lt;/style&gt;
+&lt;div id=&quot;canopy-control-lab&quot;&gt;
+  &lt;div class=&quot;canopy-control-lab__head viz-controls&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;canopy-node-select&quot;&gt;
+      当前树
+      &lt;select class=&quot;form-select&quot; id=&quot;canopy-node-select&quot;&gt;
+        &lt;option value=&quot;0&quot;&gt;树 1 · 左下&lt;/option&gt;
+        &lt;option value=&quot;1&quot;&gt;树 2 · 右侧&lt;/option&gt;
+        &lt;option value=&quot;2&quot;&gt;树 3 · 左上&lt;/option&gt;
+        &lt;option value=&quot;3&quot;&gt;树 4 · 右下&lt;/option&gt;
+        &lt;option value=&quot;4&quot;&gt;树 5 · 右上&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/label&gt;
+    &lt;div class=&quot;viz-row&quot;&gt;
+      &lt;button class=&quot;btn&quot; id=&quot;canopy-add-tree&quot; type=&quot;button&quot;&gt;增加一棵树&lt;/button&gt;
+      &lt;span class=&quot;text-small text-muted&quot;&gt;树木总数 &lt;output id=&quot;canopy-tree-count&quot;&gt;5&lt;/output&gt;&lt;/span&gt;
+      &lt;button class=&quot;btn btn-primary&quot; id=&quot;canopy-save&quot; type=&quot;button&quot;&gt;保存当前设置&lt;/button&gt;
+      &lt;button class=&quot;btn&quot; id=&quot;canopy-ripple-trigger&quot; type=&quot;button&quot;&gt;从中心吹一阵风&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;canopy-control-lab__controls&quot; aria-label=&quot;树冠节点参数&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;canopy-length&quot;&gt;
+      树枝长度 &lt;output id=&quot;canopy-length-value&quot;&gt;190&lt;/output&gt;
+      &lt;input class=&quot;form-range&quot; id=&quot;canopy-length&quot; data-key=&quot;length&quot; type=&quot;range&quot; min=&quot;90&quot; max=&quot;260&quot; step=&quot;1&quot; value=&quot;190&quot;&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;canopy-trunk-length&quot;&gt;
+      树干长度 &lt;output id=&quot;canopy-trunk-length-value&quot;&gt;190&lt;/output&gt;
+      &lt;input class=&quot;form-range&quot; id=&quot;canopy-trunk-length&quot; data-key=&quot;trunkLength&quot; type=&quot;range&quot; min=&quot;70&quot; max=&quot;340&quot; step=&quot;1&quot; value=&quot;190&quot;&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;canopy-amplitude&quot;&gt;
+      摆动幅度 &lt;output id=&quot;canopy-amplitude-value&quot;&gt;58%&lt;/output&gt;
+      &lt;input class=&quot;form-range&quot; id=&quot;canopy-amplitude&quot; data-key=&quot;amplitude&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot; step=&quot;1&quot; value=&quot;58&quot;&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;canopy-density&quot;&gt;
+      叶子密度 &lt;output id=&quot;canopy-density-value&quot;&gt;42%&lt;/output&gt;
+      &lt;input class=&quot;form-range&quot; id=&quot;canopy-density&quot; data-key=&quot;density&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot; step=&quot;1&quot; value=&quot;42&quot;&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;canopy-opacity&quot;&gt;
+      透明度 &lt;output id=&quot;canopy-opacity-value&quot;&gt;66%&lt;/output&gt;
+      &lt;input class=&quot;form-range&quot; id=&quot;canopy-opacity&quot; data-key=&quot;opacity&quot; type=&quot;range&quot; min=&quot;10&quot; max=&quot;100&quot; step=&quot;1&quot; value=&quot;66&quot;&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;canopy-spread&quot;&gt;
+      树杈分散 &lt;output id=&quot;canopy-spread-value&quot;&gt;76°&lt;/output&gt;
+      &lt;input class=&quot;form-range&quot; id=&quot;canopy-spread&quot; data-key=&quot;spread&quot; type=&quot;range&quot; min=&quot;20&quot; max=&quot;140&quot; step=&quot;1&quot; value=&quot;76&quot;&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;canopy-count&quot;&gt;
+      每节点分叉数量 &lt;output id=&quot;canopy-count-value&quot;&gt;4&lt;/output&gt;
+      &lt;input class=&quot;form-range&quot; id=&quot;canopy-count&quot; data-key=&quot;count&quot; type=&quot;range&quot; min=&quot;2&quot; max=&quot;8&quot; step=&quot;1&quot; value=&quot;4&quot;&gt;
+    &lt;/label&gt;
+    &lt;div class=&quot;canopy-control-lab__fork-control&quot;&gt;
+      &lt;div&gt;分叉节点数量 &lt;output id=&quot;canopy-fork-nodes-value&quot;&gt;2&lt;/output&gt;&lt;/div&gt;
+      &lt;div class=&quot;viz-row&quot;&gt;
+        &lt;button class=&quot;btn&quot; id=&quot;canopy-fork-remove&quot; type=&quot;button&quot; aria-label=&quot;减少一个分叉节点&quot;&gt;减少&lt;/button&gt;
+        &lt;button class=&quot;btn&quot; id=&quot;canopy-fork-add&quot; type=&quot;button&quot; aria-label=&quot;增加一个分叉节点&quot;&gt;增加&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;text-small text-muted canopy-control-lab__status&quot; id=&quot;canopy-branch-status&quot; aria-live=&quot;polite&quot;&gt;当前树冠：2 个分叉点，每个点伸出 4 枝&lt;/div&gt;
+
+  &lt;div class=&quot;canopy-control-lab__stage&quot; role=&quot;img&quot; aria-label=&quot;鼠标风力逐级作用于叶片、小枝、分枝和树干的树冠模拟&quot;&gt;
+    &lt;canvas aria-hidden=&quot;true&quot;&gt;&lt;/canvas&gt;
+    &lt;div class=&quot;canopy-control-lab__hint&quot;&gt;拖动树干移动整棵树 · 拖动分叉中心调整方向 · 拖动主枝改变形态&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+  #canopy-control-lab {
+    width: 100%;
+    overflow-x: clip;
+    color: var(--foreground);
+  }
+  .canopy-control-lab__head {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 14px;
+  }
+  .canopy-control-lab__head .form-label { min-width: min(260px, 100%); }
+  .canopy-control-lab__controls {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 24px;
+    margin-bottom: 16px;
+  }
+  .canopy-control-lab__status { margin: -6px 0 12px; }
+  .canopy-control-lab__controls output {
+    color: var(--muted-foreground);
+    font-variant-numeric: tabular-nums;
+  }
+  .canopy-control-lab__fork-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .canopy-control-lab__stage {
+    position: relative;
+    min-height: 430px;
+    overflow: hidden;
+    background: var(--background);
+    cursor: crosshair;
+    touch-action: none;
+  }
+  .canopy-control-lab__stage canvas { display: block; width: 100%; height: 430px; }
+  .canopy-control-lab__wind-cursor {
+    position: absolute;
+    z-index: 4;
+    width: 28px;
+    height: 24px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(10px, -22px) scale(.88);
+    transition: opacity .1s ease, transform .16s ease;
+    user-select: none;
+  }
+  .canopy-control-lab__wind-cursor.is-visible {
+    opacity: 1;
+    transform: translate(10px, -22px) scale(1);
+  }
+  .canopy-control-lab__hint {
+    position: absolute;
+    left: 18px;
+    bottom: 16px;
+    color: var(--muted-foreground);
+    font: 400 12px/1.3 system-ui, sans-serif;
+    letter-spacing: .06em;
+    pointer-events: none;
+    transition: opacity .35s ease;
+  }
+  @media (max-width: 560px) {
+    .canopy-control-lab__head { align-items: stretch; flex-direction: column; }
+    .canopy-control-lab__controls { grid-template-columns: minmax(0, 1fr); }
+    .canopy-control-lab__stage, .canopy-control-lab__stage canvas { min-height: 390px; height: 390px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .canopy-control-lab__stage { cursor: default; }
+  }
+&lt;/style&gt;
+
+&lt;script&gt;
+(() =&gt; {
+  const root = document.getElementById(&#x27;canopy-control-lab&#x27;);
+  const stage = root.querySelector(&#x27;.canopy-control-lab__stage&#x27;);
+  const canvas = stage.querySelector(&#x27;canvas&#x27;);
+  const hint = root.querySelector(&#x27;.canopy-control-lab__hint&#x27;);
+  const select = root.querySelector(&#x27;#canopy-node-select&#x27;);
+  const trigger = root.querySelector(&#x27;#canopy-ripple-trigger&#x27;);
+  const forkRemove = root.querySelector(&#x27;#canopy-fork-remove&#x27;);
+  const forkAdd = root.querySelector(&#x27;#canopy-fork-add&#x27;);
+  const forkValue = root.querySelector(&#x27;#canopy-fork-nodes-value&#x27;);
+  const addTreeButton = root.querySelector(&#x27;#canopy-add-tree&#x27;);
+  const treeCountValue = root.querySelector(&#x27;#canopy-tree-count&#x27;);
+  const saveButton = root.querySelector(&#x27;#canopy-save&#x27;);
+  const branchStatus = root.querySelector(&#x27;#canopy-branch-status&#x27;);
+  const inputs = [...root.querySelectorAll(&#x27;input[data-key]&#x27;)];
+  const ctx = canvas.getContext(&#x27;2d&#x27;);
+  const reduceMotion = window.matchMedia(&#x27;(prefers-reduced-motion: reduce)&#x27;).matches;
+  const isReadOnly = true;
+  let windCursor = null;
+  if (isReadOnly) {
+    windCursor = document.createElement(&#x27;img&#x27;);
+    windCursor.className = &#x27;canopy-control-lab__wind-cursor&#x27;;
+    windCursor.src = new URL(&#x27;assets/wind-cursor.svg&#x27;, parent.location.href).href;
+    windCursor.alt = &#x27;&#x27;;
+    windCursor.draggable = false;
+    stage.append(windCursor);
+  }
+  const pointer = { x: -9999, y: -9999, active: false };
+  const windPulses = [];
+  const fallingLeaves = [];
+  let lastFrameTime = performance.now();
+  const storageKey = &#x27;camphor-canopy-studio-v3&#x27;;
+  const defaultConfigs = [
+    {&quot;length&quot;:237,&quot;trunkLength&quot;:118,&quot;amplitude&quot;:58,&quot;density&quot;:53,&quot;opacity&quot;:66,&quot;spread&quot;:140,&quot;count&quot;:4,&quot;forkNodes&quot;:3,&quot;phase&quot;:0.4,&quot;branchOffsets&quot;:{&quot;0:0&quot;:{&quot;x&quot;:18.666664123535156,&quot;y&quot;:-16.666748046875},&quot;1:0&quot;:{&quot;x&quot;:-0.6666669845581055,&quot;y&quot;:-18.00006103515625},&quot;1:2&quot;:{&quot;x&quot;:17.333332061767578,&quot;y&quot;:-28},&quot;1:1&quot;:{&quot;x&quot;:14,&quot;y&quot;:-22},&quot;0:1&quot;:{&quot;x&quot;:5.333335876464844,&quot;y&quot;:10.6666259765625}},&quot;positionOffset&quot;:{&quot;x&quot;:11.333293914794922,&quot;y&quot;:3.3333740234375},&quot;angleOffset&quot;:0.015955347477843107},
+    {&quot;length&quot;:178,&quot;trunkLength&quot;:70,&quot;amplitude&quot;:46,&quot;density&quot;:34,&quot;opacity&quot;:58,&quot;spread&quot;:62,&quot;count&quot;:4,&quot;forkNodes&quot;:3,&quot;phase&quot;:1.5,&quot;branchOffsets&quot;:{},&quot;positionOffset&quot;:{&quot;x&quot;:-8.66668701171875,&quot;y&quot;:109.33331298828125},&quot;angleOffset&quot;:0.9322947661700041},
+    {&quot;length&quot;:145,&quot;trunkLength&quot;:145,&quot;amplitude&quot;:36,&quot;density&quot;:28,&quot;opacity&quot;:26,&quot;spread&quot;:70,&quot;count&quot;:3,&quot;forkNodes&quot;:5,&quot;phase&quot;:2.8,&quot;branchOffsets&quot;:{},&quot;positionOffset&quot;:{&quot;x&quot;:-74.00001525878906,&quot;y&quot;:-98.00003051757812},&quot;angleOffset&quot;:0.03905256458215533},
+    {&quot;length&quot;:260,&quot;trunkLength&quot;:145,&quot;amplitude&quot;:52,&quot;density&quot;:37,&quot;opacity&quot;:42,&quot;spread&quot;:91,&quot;count&quot;:4,&quot;forkNodes&quot;:4,&quot;phase&quot;:4,&quot;branchOffsets&quot;:{&quot;2:0&quot;:{&quot;x&quot;:-6.66668701171875,&quot;y&quot;:-5.3333740234375},&quot;0:3&quot;:{&quot;x&quot;:-0.66656494140625,&quot;y&quot;:50.6666259765625}},&quot;positionOffset&quot;:{&quot;x&quot;:247.9998779296875,&quot;y&quot;:83.3333740234375},&quot;angleOffset&quot;:-0.1479945070395725},
+    {&quot;length&quot;:231,&quot;trunkLength&quot;:101,&quot;amplitude&quot;:32,&quot;density&quot;:36,&quot;opacity&quot;:50,&quot;spread&quot;:63,&quot;count&quot;:3,&quot;forkNodes&quot;:5,&quot;phase&quot;:5.2,&quot;branchOffsets&quot;:{&quot;0:0&quot;:{&quot;x&quot;:43.3333740234375,&quot;y&quot;:-37.33332824707031},&quot;0:1&quot;:{&quot;x&quot;:26.6666259765625,&quot;y&quot;:0.6666717529296875}},&quot;positionOffset&quot;:{&quot;x&quot;:160.6666259765625,&quot;y&quot;:-17.33331298828125},&quot;angleOffset&quot;:0.42237179094006927},
+    {&quot;length&quot;:230,&quot;trunkLength&quot;:145,&quot;amplitude&quot;:36,&quot;density&quot;:28,&quot;opacity&quot;:54,&quot;spread&quot;:83,&quot;count&quot;:4,&quot;forkNodes&quot;:5,&quot;phase&quot;:6.25,&quot;branchOffsets&quot;:{&quot;0:2&quot;:{&quot;x&quot;:-41.333332538604736,&quot;y&quot;:-17.999969482421875},&quot;1:2&quot;:{&quot;x&quot;:-13.333335876464844,&quot;y&quot;:38.66661071777344},&quot;0:0&quot;:{&quot;x&quot;:-4.666706085205078,&quot;y&quot;:26.000030517578125},&quot;0:1&quot;:{&quot;x&quot;:-4.000003814697266,&quot;y&quot;:-53.3333740234375},&quot;1:1&quot;:{&quot;x&quot;:12.666671752929688,&quot;y&quot;:8.666717529296875},&quot;2:1&quot;:{&quot;x&quot;:4.666667938232422,&quot;y&quot;:5.33331298828125},&quot;1:0&quot;:{&quot;x&quot;:-2,&quot;y&quot;:-6.6666259765625},&quot;2:0&quot;:{&quot;x&quot;:-21.333335876464844,&quot;y&quot;:-18},&quot;0:3&quot;:{&quot;x&quot;:40.00000190734863,&quot;y&quot;:-10.000007629394531},&quot;1:3&quot;:{&quot;x&quot;:43.999961853027344,&quot;y&quot;:18.666648864746094},&quot;2:3&quot;:{&quot;x&quot;:6,&quot;y&quot;:-13.333351135253906}},&quot;positionOffset&quot;:{&quot;x&quot;:-30.666491448879242,&quot;y&quot;:-286.0000349879265},&quot;angleOffset&quot;:0.9673181924855668},
+    {&quot;length&quot;:116,&quot;trunkLength&quot;:70,&quot;amplitude&quot;:32,&quot;density&quot;:25,&quot;opacity&quot;:37,&quot;spread&quot;:115,&quot;count&quot;:4,&quot;forkNodes&quot;:5,&quot;phase&quot;:1.1368146928204137,&quot;branchOffsets&quot;:{&quot;0:2&quot;:{&quot;x&quot;:-10,&quot;y&quot;:-3.33331298828125},&quot;0:1&quot;:{&quot;x&quot;:-10,&quot;y&quot;:4}},&quot;positionOffset&quot;:{&quot;x&quot;:118.666748046875,&quot;y&quot;:-18},&quot;angleOffset&quot;:-0.5815629221889347},
+    {&quot;length&quot;:199,&quot;trunkLength&quot;:147,&quot;amplitude&quot;:52,&quot;density&quot;:38,&quot;opacity&quot;:60,&quot;spread&quot;:103,&quot;count&quot;:4,&quot;forkNodes&quot;:3,&quot;phase&quot;:2.3068146928204136,&quot;branchOffsets&quot;:{&quot;2:1&quot;:{&quot;x&quot;:-8,&quot;y&quot;:4},&quot;0:3&quot;:{&quot;x&quot;:-33.333343505859375,&quot;y&quot;:-2},&quot;0:2&quot;:{&quot;x&quot;:6,&quot;y&quot;:-10},&quot;0:1&quot;:{&quot;x&quot;:3.333343505859375,&quot;y&quot;:-10},&quot;1:3&quot;:{&quot;x&quot;:9.333251953125,&quot;y&quot;:-7.99993896484375},&quot;0:0&quot;:{&quot;x&quot;:17.333404541015625,&quot;y&quot;:20.66668701171875},&quot;1:1&quot;:{&quot;x&quot;:10.666748046875,&quot;y&quot;:-6.6666259765625},&quot;1:0&quot;:{&quot;x&quot;:-64.6666259765625,&quot;y&quot;:22}},&quot;positionOffset&quot;:{&quot;x&quot;:-706.6666259765625,&quot;y&quot;:-356.00007128715515},&quot;angleOffset&quot;:-1.1040103823635026},
+    {&quot;length&quot;:146,&quot;trunkLength&quot;:70,&quot;amplitude&quot;:32,&quot;density&quot;:36,&quot;opacity&quot;:50,&quot;spread&quot;:63,&quot;count&quot;:3,&quot;forkNodes&quot;:5,&quot;phase&quot;:3.4768146928204136,&quot;branchOffsets&quot;:{},&quot;positionOffset&quot;:{&quot;x&quot;:-15.33343505859375,&quot;y&quot;:50.66668701171875},&quot;angleOffset&quot;:0.14719984658374277},
+    {&quot;length&quot;:170,&quot;trunkLength&quot;:101,&quot;amplitude&quot;:32,&quot;density&quot;:36,&quot;opacity&quot;:50,&quot;spread&quot;:110,&quot;count&quot;:4,&quot;forkNodes&quot;:5,&quot;phase&quot;:4.6468146928204135,&quot;branchOffsets&quot;:{&quot;1:0&quot;:{&quot;x&quot;:-1.3333206176757812,&quot;y&quot;:-5.33331298828125},&quot;0:1&quot;:{&quot;x&quot;:0.666656494140625,&quot;y&quot;:6}},&quot;positionOffset&quot;:{&quot;x&quot;:365.33341693878174,&quot;y&quot;:387.99993896484375},&quot;angleOffset&quot;:-1.391281850972472},
+    {&quot;length&quot;:170,&quot;trunkLength&quot;:101,&quot;amplitude&quot;:32,&quot;density&quot;:60,&quot;opacity&quot;:19,&quot;spread&quot;:96,&quot;count&quot;:3,&quot;forkNodes&quot;:3,&quot;phase&quot;:5.816814692820413,&quot;branchOffsets&quot;:{&quot;2:0&quot;:{&quot;x&quot;:-12.666671752929688,&quot;y&quot;:-11.33331298828125},&quot;2:1&quot;:{&quot;x&quot;:-6.6666717529296875,&quot;y&quot;:-32.66668701171875},&quot;2:2&quot;:{&quot;x&quot;:20.666671752929688,&quot;y&quot;:-19.33331298828125},&quot;0:1&quot;:{&quot;x&quot;:-4.6666717529296875,&quot;y&quot;:-22.66668701171875}},&quot;positionOffset&quot;:{&quot;x&quot;:-587.3333892822266,&quot;y&quot;:446.66668701171875},&quot;angleOffset&quot;:-2.377292243806723},
+    {&quot;length&quot;:233,&quot;trunkLength&quot;:145,&quot;amplitude&quot;:36,&quot;density&quot;:28,&quot;opacity&quot;:54,&quot;spread&quot;:83,&quot;count&quot;:4,&quot;forkNodes&quot;:5,&quot;phase&quot;:0.7036293856408271,&quot;branchOffsets&quot;:{&quot;0:0&quot;:{&quot;x&quot;:53.3333740234375,&quot;y&quot;:-38.00006103515625},&quot;0:1&quot;:{&quot;x&quot;:39.3333740234375,&quot;y&quot;:-49.33331298828125},&quot;0:2&quot;:{&quot;x&quot;:6.666748046875,&quot;y&quot;:-4},&quot;0:3&quot;:{&quot;x&quot;:-49.3333740234375,&quot;y&quot;:66.6666259765625}},&quot;positionOffset&quot;:{&quot;x&quot;:7.3333740234375,&quot;y&quot;:-1.33331298828125},&quot;angleOffset&quot;:0.0592633237465483}
+  ];
+  let restoredState = null;
+  try { restoredState = JSON.parse(localStorage.getItem(storageKey) || &#x27;null&#x27;); } catch {}
+  const configs = (Array.isArray(restoredState?.configs) &amp;&amp; restoredState.configs.length
+    ? restoredState.configs
+    : defaultConfigs).map((config, index) =&gt; ({
+      ...defaultConfigs[index % defaultConfigs.length],
+      ...config,
+      branchOffsets: config.branchOffsets || {},
+      positionOffset: config.positionOffset || { x: 0, y: 0 },
+      angleOffset: Number(config.angleOffset) || 0
+    }));
+  const restoredSelectedIndex = Number(restoredState?.selectedIndex);
+  let selectedIndex = Math.max(0, Math.min(configs.length - 1, Number.isFinite(restoredSelectedIndex) ? restoredSelectedIndex : 11));
+  let trees = [];
+  let width = 0, height = 0, dpr = 1, lastWindAt = -9999;
+  let dragState = null, hoveredBranchId = null, hoveredTreeIndex = -1;
+  let resolvedPalette = null;
+
+  const clamp = (value, min, max) =&gt; Math.max(min, Math.min(max, value));
+  const rgba = (value, alpha) =&gt; {
+    const rgb = value.match(/[\d.]+/g)?.slice(0, 3) || [&#x27;35&#x27;,&#x27;42&#x27;,&#x27;35&#x27;];
+    return `rgba(${rgb.join(&#x27;,&#x27;)},${alpha})`;
+  };
+  const palette = () =&gt; {
+    if (resolvedPalette) return resolvedPalette;
+    const probe = document.createElement(&#x27;span&#x27;);
+    probe.style.position = &#x27;absolute&#x27;;
+    probe.style.visibility = &#x27;hidden&#x27;;
+    root.appendChild(probe);
+    probe.style.color = &#x27;var(--background)&#x27;;
+    const paper = getComputedStyle(probe).color;
+    probe.style.color = &#x27;var(--foreground)&#x27;;
+    const ink = getComputedStyle(probe).color;
+    probe.remove();
+    resolvedPalette = { paper, ink };
+    return resolvedPalette;
+  };
+  const randomFactory = seed =&gt; () =&gt; {
+    seed |= 0;
+    seed = seed + 0x6D2B79F5 | 0;
+    let t = Math.imul(seed ^ seed &gt;&gt;&gt; 15, 1 | seed);
+    t = t + Math.imul(t ^ t &gt;&gt;&gt; 7, 61 | t) ^ t;
+    return ((t ^ t &gt;&gt;&gt; 14) &gt;&gt;&gt; 0) / 4294967296;
+  };
+  const rotate = (point, pivot, angle) =&gt; {
+    const c = Math.cos(angle), s = Math.sin(angle);
+    const x = point.x - pivot.x, y = point.y - pivot.y;
+    return { x: pivot.x + x * c - y * s, y: pivot.y + x * s + y * c };
+  };
+  const pointSegmentDistance = (point, a, b) =&gt; {
+    const vx = b.x - a.x, vy = b.y - a.y;
+    const lengthSq = vx * vx + vy * vy || 1;
+    const t = clamp(((point.x - a.x) * vx + (point.y - a.y) * vy) / lengthSq, 0, 1);
+    return Math.hypot(point.x - (a.x + vx * t), point.y - (a.y + vy * t));
+  };
+  const basePlacement = index =&gt; {
+    const presets = [
+      { root: { x: -34, y: height + 24 }, angle: -1.02 },
+      { root: { x: width + 34, y: height * .45 }, angle: 3.02 },
+      { root: { x: width * .22, y: -34 }, angle: 1.26 },
+      { root: { x: width * .73, y: height + 34 }, angle: -1.82 },
+      { root: { x: width * .84, y: -34 }, angle: 1.94 }
+    ];
+    if (index &lt; presets.length) return presets[index];
+    const extra = index - presets.length;
+    const side = extra % 4;
+    const layer = Math.floor(extra / 4);
+    const along = .24 + ((extra * .31 + layer * .17) % .54);
+    if (side === 0) return { root: { x: -34, y: height * along }, angle: .08 };
+    if (side === 1) return { root: { x: width * along, y: -34 }, angle: 1.5 };
+    if (side === 2) return { root: { x: width + 34, y: height * along }, angle: 3.08 };
+    return { root: { x: width * along, y: height + 34 }, angle: -1.5 };
+  };
+  const placements = () =&gt; configs.map((config, index) =&gt; {
+    const base = basePlacement(index);
+    return {
+      root: {
+        x: base.root.x + config.positionOffset.x,
+        y: base.root.y + config.positionOffset.y
+      },
+      angle: base.angle + config.angleOffset
+    };
+  });
+  const makeTree = (config, placement, index) =&gt; {
+    const rand = randomFactory(1301 + index * 887);
+    const branches = [];
+    const leaves = [];
+    const addBranch = (start, end, curveScale = .07, metadata = {}) =&gt; {
+      const dx = end.x - start.x;
+      const dy = end.y - start.y;
+      const branchLength = Math.hypot(dx, dy) || 1;
+      const bend = branchLength * curveScale * (.55 + rand() * .65) * (rand() &lt; .5 ? -1 : 1);
+      const branch = {
+        start,
+        end,
+        phase: rand() * Math.PI * 2,
+        ...metadata,
+        control: {
+          x: (start.x + end.x) * .5 - dy / branchLength * bend,
+          y: (start.y + end.y) * .5 + dx / branchLength * bend
+        }
+      };
+      branches.push(branch);
+      return branch;
+    };
+    const pointOnBranch = (branch, t) =&gt; {
+      const u = 1 - t;
+      return {
+        x: u * u * branch.start.x + 2 * u * t * branch.control.x + t * t * branch.end.x,
+        y: u * u * branch.start.y + 2 * u * t * branch.control.y + t * t * branch.end.y
+      };
+    };
+    const rootPoint = placement.root;
+    const direction = { x: Math.cos(placement.angle), y: Math.sin(placement.angle) };
+    const normal = { x: -direction.y, y: direction.x };
+    const trunkPoints = [rootPoint];
+    for (let segment = 1; segment &lt;= 4; segment++) {
+      const t = segment / 4;
+      const curve = Math.sin(t * Math.PI) * config.trunkLength * .05 * (index % 2 ? 1 : -1);
+      trunkPoints.push({
+        x: rootPoint.x + direction.x * config.trunkLength * t + normal.x * curve,
+        y: rootPoint.y + direction.y * config.trunkLength * t + normal.y * curve
+      });
+    }
+    for (let index = 1; index &lt; trunkPoints.length; index++) {
+      addBranch(trunkPoints[index - 1], trunkPoints[index], .025, { kind: &#x27;trunk&#x27; });
+    }
+    const crown = trunkPoints[trunkPoints.length - 1];
+    const spread = config.spread * Math.PI / 180;
+    const addLeafyShoot = (origin, angle, lengthScale = 1, parent = null, parentT = 1) =&gt; {
+      const shootLength = config.length * (.065 + rand() * .025) * lengthScale;
+      const shootAngle = angle + (rand() - .5) * .13;
+      const shootEnd = {
+        x: origin.x + Math.cos(shootAngle) * shootLength,
+        y: origin.y + Math.sin(shootAngle) * shootLength
+      };
+      const shoot = addBranch(origin, shootEnd, .12, { kind: &#x27;twig&#x27;, parent, parentT });
+      leaves.push({
+        shoot,
+        t: 1,
+        angle: shootAngle + (rand() - .5) * .08,
+        size: 5.8 + rand() * 2.5,
+        phase: rand() * Math.PI * 2
+      });
+      const pairCount = 1 + Math.round(config.density / 100);
+      for (let pairIndex = 0; pairIndex &lt; pairCount; pairIndex++) {
+        const t = pairCount === 1 ? .54 : .3 + pairIndex / (pairCount - 1) * .38;
+        [-1, 1].forEach(side =&gt; {
+          leaves.push({
+            shoot,
+            t,
+            angle: shootAngle + side * (.72 + rand() * .2),
+            size: 5.1 + rand() * 2.4,
+            phase: rand() * Math.PI * 2
+          });
+        });
+      }
+    };
+    const nodeQueue = [{ origin: crown, axis: placement.angle, depth: 0, parentBranch: null }];
+    let nodesBuilt = 0;
+    while (nodeQueue.length &amp;&amp; nodesBuilt &lt; config.forkNodes) {
+      const node = nodeQueue.shift();
+      nodesBuilt += 1;
+      const depthScale = Math.pow(.7, node.depth);
+      const endpoints = [];
+      for (let branchIndex = 0; branchIndex &lt; config.count; branchIndex++) {
+        const branchId = `${nodesBuilt - 1}:${branchIndex}`;
+        const ratio = config.count === 1 ? .5 : branchIndex / (config.count - 1);
+        const fanOffset = (ratio - .5) * spread * Math.max(.58, 1 - node.depth * .12);
+        const branchAngle = node.axis + fanOffset + (rand() - .5) * .065;
+        const branchLength = config.length * (.3 + rand() * .055) * depthScale;
+        const manualOffset = config.branchOffsets[branchId] || { x: 0, y: 0 };
+        const branchEnd = {
+          x: node.origin.x + Math.cos(branchAngle) * branchLength + manualOffset.x,
+          y: node.origin.y + Math.sin(branchAngle) * branchLength + manualOffset.y
+        };
+        const adjustedAngle = Math.atan2(branchEnd.y - node.origin.y, branchEnd.x - node.origin.x);
+        const branch = addBranch(node.origin, branchEnd, .075, {
+          id: branchId,
+          kind: &#x27;branch&#x27;,
+          draggable: true,
+          parent: node.parentBranch,
+          parentT: 1
+        });
+        endpoints.push({ point: branchEnd, angle: adjustedAngle, ratio, branch });
+      }
+      const nodesStillNeeded = config.forkNodes - nodesBuilt - nodeQueue.length;
+      const continuationCount = Math.min(2, endpoints.length, Math.max(0, nodesStillNeeded));
+      const continuationIndexes = continuationCount === 1
+        ? [Math.floor((endpoints.length - 1) * .62)]
+        : continuationCount === 2
+          ? [Math.floor((endpoints.length - 1) * .28), Math.ceil((endpoints.length - 1) * .72)]
+          : [];
+      endpoints.forEach((endpoint, endpointIndex) =&gt; {
+        const sideShootCount = Math.round(config.density / 100 * 2);
+        for (let shootIndex = 0; shootIndex &lt; sideShootCount; shootIndex++) {
+          const t = sideShootCount === 1 ? .58 : .42 + shootIndex / (sideShootCount - 1) * .28;
+          const side = (shootIndex + endpointIndex) % 2 ? 1 : -1;
+          const shootOrigin = pointOnBranch(endpoint.branch, t);
+          addLeafyShoot(shootOrigin, endpoint.angle + side * (.54 + rand() * .22), .82, endpoint.branch, t);
+        }
+        if (continuationIndexes.includes(endpointIndex)) {
+          nodeQueue.push({
+            origin: endpoint.point,
+            axis: endpoint.angle + (endpoint.ratio - .5) * spread * .12,
+            depth: node.depth + 1,
+            parentBranch: endpoint.branch
+          });
+        } else {
+          addLeafyShoot(endpoint.point, endpoint.angle, 1, endpoint.branch, 1);
+        }
+      });
+    }
+    const points = branches.flatMap(branch =&gt; [branch.start, branch.end]);
+    const radius = Math.max(...points.map(point =&gt; Math.hypot(point.x - crown.x, point.y - crown.y)));
+    return {
+      config,
+      root: rootPoint,
+      crown,
+      radius,
+      reach: Math.max(...points.map(point =&gt; Math.hypot(point.x - rootPoint.x, point.y - rootPoint.y))),
+      branches,
+      draggableBranches: branches.filter(branch =&gt; branch.draggable),
+      leaves,
+      impulseStarted: -9999,
+      impulseDirection: 1,
+      hovered: false,
+      index
+    };
+  };
+  const buildTrees = () =&gt; {
+    const spots = placements();
+    trees = configs.map((config, index) =&gt; makeTree(config, spots[index], index));
+  };
+  let saveFeedbackTimer = 0;
+  const saveState = (showFeedback = false) =&gt; {
+    try {
+      localStorage.setItem(storageKey, JSON.stringify({ version: 3, selectedIndex, configs }));
+      if (showFeedback) {
+        saveButton.textContent = &#x27;已保存&#x27;;
+        clearTimeout(saveFeedbackTimer);
+        saveFeedbackTimer = setTimeout(() =&gt; { saveButton.textContent = &#x27;保存当前设置&#x27;; }, 1200);
+      }
+      return true;
+    } catch {
+      if (showFeedback) saveButton.textContent = &#x27;保存失败&#x27;;
+      return false;
+    }
+  };
+  const syncTreeOptions = () =&gt; {
+    while (select.options.length &lt; configs.length) {
+      const index = select.options.length;
+      const option = document.createElement(&#x27;option&#x27;);
+      option.value = String(index);
+      option.textContent = `树 ${index + 1} · 新增`;
+      select.appendChild(option);
+    }
+    treeCountValue.value = String(configs.length);
+    treeCountValue.textContent = String(configs.length);
+    addTreeButton.disabled = configs.length &gt;= 12;
+  };
+  const addTree = () =&gt; {
+    if (configs.length &gt;= 12) return;
+    const source = configs[selectedIndex];
+    const index = configs.length;
+    configs.push({
+      length: source.length,
+      trunkLength: source.trunkLength,
+      amplitude: source.amplitude,
+      density: source.density,
+      opacity: source.opacity,
+      spread: source.spread,
+      count: source.count,
+      forkNodes: source.forkNodes,
+      phase: (index * 1.17 + .4) % (Math.PI * 2),
+      branchOffsets: {},
+      positionOffset: { x: 0, y: 0 },
+      angleOffset: 0
+    });
+    selectedIndex = index;
+    syncTreeOptions();
+    syncControls();
+    buildTrees();
+    saveState();
+  };
+  const resize = () =&gt; {
+    const rect = stage.getBoundingClientRect();
+    width = Math.max(320, rect.width);
+    height = Math.max(390, rect.height);
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    canvas.width = width * dpr;
+    canvas.height = height * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    resolvedPalette = null;
+    buildTrees();
+  };
+  const layerProfiles = {
+    leaf: { delay: 0, gain: .12, ambient: .038 },
+    twig: { delay: .1, gain: .082, ambient: .025 },
+    branch: { delay: .24, gain: .044, ambient: .013 },
+    trunk: { delay: .42, gain: .014, ambient: .0045 }
+  };
+  const layerResponse = (tree, time, kind, phase = 0) =&gt; {
+    const profile = layerProfiles[kind];
+    const amplitude = tree.config.amplitude / 100;
+    let response = Math.sin(time * .00042 + tree.config.phase + phase * .12) * profile.ambient;
+    windPulses.forEach(pulse =&gt; {
+      const distance = Math.hypot(tree.crown.x - pulse.x, tree.crown.y - pulse.y);
+      const travelDelay = distance / 240;
+      const age = (time - pulse.started) / 1000 - travelDelay - profile.delay;
+      if (age &lt;= 0 || age &gt;= 4.2) return;
+      const envelope = Math.exp(-age * .72);
+      const slowWave = Math.sin(age * Math.PI * .92 + .42);
+      response += slowWave * envelope * profile.gain * pulse.direction;
+    });
+    return response * amplitude;
+  };
+  const transformByTrunk = (tree, point, time) =&gt; {
+    const angle = layerResponse(tree, time, &#x27;trunk&#x27;);
+    const distance = Math.hypot(point.x - tree.root.x, point.y - tree.root.y);
+    const flex = clamp(distance / tree.reach, 0, 1.15);
+    return rotate(point, tree.root, angle * Math.pow(flex, 1.4));
+  };
+  const pointOnCurve = (start, control, end, t) =&gt; {
+    const u = 1 - t;
+    return {
+      x: u * u * start.x + 2 * u * t * control.x + t * t * end.x,
+      y: u * u * start.y + 2 * u * t * control.y + t * t * end.y
+    };
+  };
+  const deformBranch = (tree, branch, time, cache) =&gt; {
+    if (cache.has(branch)) return cache.get(branch);
+    const baseStart = transformByTrunk(tree, branch.start, time);
+    const baseControl = transformByTrunk(tree, branch.control, time);
+    const baseEnd = transformByTrunk(tree, branch.end, time);
+    if (branch.kind === &#x27;trunk&#x27;) {
+      const result = { start: baseStart, control: baseControl, end: baseEnd, rotation: 0 };
+      cache.set(branch, result);
+      return result;
+    }
+    let start = baseStart;
+    let inheritedRotation = 0;
+    if (branch.parent) {
+      const parent = deformBranch(tree, branch.parent, time, cache);
+      start = pointOnCurve(parent.start, parent.control, parent.end, branch.parentT ?? 1);
+      inheritedRotation = parent.rotation;
+    }
+    const dx = start.x - baseStart.x;
+    const dy = start.y - baseStart.y;
+    const localRotation = layerResponse(tree, time, branch.kind, branch.phase);
+    const rotation = inheritedRotation + localRotation;
+    const translatedControl = { x: baseControl.x + dx, y: baseControl.y + dy };
+    const translatedEnd = { x: baseEnd.x + dx, y: baseEnd.y + dy };
+    const result = {
+      start,
+      control: rotate(translatedControl, start, rotation),
+      end: rotate(translatedEnd, start, rotation),
+      rotation
+    };
+    cache.set(branch, result);
+    return result;
+  };
+  const stagePoint = event =&gt; {
+    const rect = stage.getBoundingClientRect();
+    return { x: event.clientX - rect.left, y: event.clientY - rect.top };
+  };
+  const findDraggableBranch = (point, time = performance.now()) =&gt; {
+    let closest = null;
+    trees.forEach(tree =&gt; {
+      const cache = new Map();
+      tree.draggableBranches.forEach(branch =&gt; {
+        const deformed = reduceMotion
+          ? { start: branch.start, control: branch.control, end: branch.end }
+          : deformBranch(tree, branch, time, cache);
+        const { start, control, end } = deformed;
+        let previous = start;
+        let distance = Infinity;
+        for (let step = 1; step &lt;= 10; step++) {
+          const current = pointOnCurve(start, control, end, step / 10);
+          distance = Math.min(distance, pointSegmentDistance(point, previous, current));
+          previous = current;
+        }
+        if (!closest || distance &lt; closest.distance) closest = { tree, branch, distance };
+      });
+    });
+    return closest &amp;&amp; closest.distance &lt;= 12 ? closest : null;
+  };
+  const curveDistance = (point, curve) =&gt; {
+    let previous = curve.start;
+    let distance = Infinity;
+    for (let step = 1; step &lt;= 12; step++) {
+      const current = pointOnCurve(curve.start, curve.control, curve.end, step / 12);
+      distance = Math.min(distance, pointSegmentDistance(point, previous, current));
+      previous = current;
+    }
+    return distance;
+  };
+  const findTreeGesture = (point, time = performance.now()) =&gt; {
+    let rotateHit = null;
+    let moveHit = null;
+    trees.forEach(tree =&gt; {
+      const crown = reduceMotion ? tree.crown : transformByTrunk(tree, tree.crown, time);
+      const crownDistance = Math.hypot(point.x - crown.x, point.y - crown.y);
+      if (crownDistance &lt;= 16 &amp;&amp; (!rotateHit || crownDistance &lt; rotateHit.distance)) {
+        rotateHit = { tree, type: &#x27;tree-rotate&#x27;, distance: crownDistance };
+      }
+      const cache = new Map();
+      tree.branches.filter(branch =&gt; branch.kind === &#x27;trunk&#x27;).forEach(branch =&gt; {
+        const curve = reduceMotion
+          ? { start: branch.start, control: branch.control, end: branch.end }
+          : deformBranch(tree, branch, time, cache);
+        const distance = curveDistance(point, curve);
+        if (distance &lt;= 10 &amp;&amp; (!moveHit || distance &lt; moveHit.distance)) {
+          moveHit = { tree, type: &#x27;tree-move&#x27;, distance };
+        }
+      });
+    });
+    return rotateHit || moveHit;
+  };
+  const drawLeaf = (base, angle, size, ink, opacity) =&gt; {
+    ctx.save();
+    ctx.translate(base.x, base.y);
+    ctx.rotate(angle);
+    ctx.strokeStyle = rgba(ink, opacity);
+    ctx.lineWidth = .68;
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.bezierCurveTo(size * .55, -size * .62, size * 1.02, -size * .22, size, size * .08);
+    ctx.bezierCurveTo(size * .56, size * .54, size * .12, size * .38, 0, 0);
+    ctx.stroke();
+    ctx.restore();
+  };
+  const releaseLeaves = (tree, time) =&gt; {
+    const cache = new Map();
+    const available = tree.leaves.filter(leaf =&gt; !leaf.shedUntil || leaf.shedUntil &lt;= time);
+    const amount = clamp(Math.round(available.length * .14), 7, 16);
+    const stride = Math.max(1, Math.floor(available.length / amount));
+    const offset = Math.floor(Math.random() * stride);
+    available.filter((leaf, index) =&gt; (index + offset) % stride === 0).slice(0, amount).forEach((leaf, index) =&gt; {
+      const shoot = reduceMotion
+        ? { start: leaf.shoot.start, control: leaf.shoot.control, end: leaf.shoot.end, rotation: 0 }
+        : deformBranch(tree, leaf.shoot, time, cache);
+      const stem = pointOnCurve(shoot.start, shoot.control, shoot.end, leaf.t);
+      const flutter = reduceMotion ? 0 : layerResponse(tree, time, &#x27;leaf&#x27;, leaf.phase + index * .07);
+      const angle = leaf.angle + shoot.rotation + flutter;
+      const petioleEnd = {
+        x: stem.x + Math.cos(angle) * 3.4,
+        y: stem.y + Math.sin(angle) * 3.4
+      };
+      leaf.shedUntil = time + 4300 + Math.random() * 900;
+      fallingLeaves.push({
+        x: petioleEnd.x,
+        y: petioleEnd.y,
+        angle,
+        size: leaf.size,
+        opacity: tree.config.opacity / 100,
+        life: 3900 + Math.random() * 1200,
+        vx: (Math.random() - .35) * .055,
+        vy: -.018 + Math.random() * .018,
+        spin: (Math.random() &lt; .5 ? -1 : 1) * (.0026 + Math.random() * .0038),
+        phase: Math.random() * Math.PI * 2
+      });
+    });
+  };
+  const draw = time =&gt; {
+    const colors = palette();
+    const delta = Math.min(34, Math.max(0, time - lastFrameTime));
+    lastFrameTime = time;
+    ctx.clearRect(0, 0, width, height);
+    ctx.fillStyle = colors.paper;
+    ctx.fillRect(0, 0, width, height);
+    while (windPulses.length &amp;&amp; time - windPulses[0].started &gt; 5200) windPulses.shift();
+    trees.forEach(tree =&gt; {
+      const cache = new Map();
+      const selected = tree.index === selectedIndex;
+      const opacityScale = tree.config.opacity / 100;
+      const branchOpacity = opacityScale * (selected ? 1 : .58);
+      const leafOpacity = opacityScale * (selected ? .94 : .54);
+      ctx.lineWidth = 1.2;
+      ctx.lineCap = &#x27;round&#x27;;
+      ctx.lineJoin = &#x27;round&#x27;;
+      tree.branches.forEach(branch =&gt; {
+        const branchHovered = tree.index === hoveredTreeIndex &amp;&amp; branch.id === hoveredBranchId;
+        ctx.strokeStyle = rgba(colors.ink, branchHovered ? Math.min(1, branchOpacity + .28) : branchOpacity);
+        const deformed = reduceMotion
+          ? { start: branch.start, control: branch.control, end: branch.end, rotation: 0 }
+          : deformBranch(tree, branch, time, cache);
+        const { start, control, end } = deformed;
+        ctx.beginPath();
+        ctx.moveTo(start.x, start.y);
+        ctx.quadraticCurveTo(control.x, control.y, end.x, end.y);
+        ctx.stroke();
+      });
+      tree.leaves.forEach((leaf, leafIndex) =&gt; {
+        if (leaf.shedUntil &amp;&amp; leaf.shedUntil &gt; time) return;
+        const shoot = reduceMotion
+          ? { start: leaf.shoot.start, control: leaf.shoot.control, end: leaf.shoot.end, rotation: 0 }
+          : deformBranch(tree, leaf.shoot, time, cache);
+        const stem = pointOnCurve(shoot.start, shoot.control, shoot.end, leaf.t);
+        const flutter = reduceMotion ? 0 : layerResponse(tree, time, &#x27;leaf&#x27;, leaf.phase + leafIndex * .07);
+        const petioleEnd = {
+          x: stem.x + Math.cos(leaf.angle + shoot.rotation + flutter) * 3.4,
+          y: stem.y + Math.sin(leaf.angle + shoot.rotation + flutter) * 3.4
+        };
+        ctx.strokeStyle = rgba(colors.ink, leafOpacity * .58);
+        ctx.lineWidth = .62;
+        ctx.beginPath();
+        ctx.moveTo(stem.x, stem.y);
+        ctx.lineTo(petioleEnd.x, petioleEnd.y);
+        ctx.stroke();
+        drawLeaf(petioleEnd, leaf.angle + shoot.rotation + flutter, leaf.size, colors.ink, leafOpacity);
+      });
+    });
+    for (let index = fallingLeaves.length - 1; index &gt;= 0; index--) {
+      const leaf = fallingLeaves[index];
+      leaf.life -= delta;
+      leaf.vy += delta * .000035;
+      leaf.x += leaf.vx * delta + Math.sin(time * .003 + leaf.phase) * .18;
+      leaf.y += leaf.vy * delta;
+      leaf.angle += leaf.spin * delta;
+      const fade = clamp(leaf.life / 1100, 0, 1);
+      drawLeaf({ x: leaf.x, y: leaf.y }, leaf.angle, leaf.size, colors.ink, leaf.opacity * fade);
+      if (leaf.life &lt;= 0 || leaf.y &gt; height + 30) fallingLeaves.splice(index, 1);
+    }
+    if (!reduceMotion) requestAnimationFrame(draw);
+  };
+  const setPointer = event =&gt; {
+    const rect = stage.getBoundingClientRect();
+    const next = { x: event.clientX - rect.left, y: event.clientY - rect.top };
+    const previous = pointer.active ? { x: pointer.x, y: pointer.y } : next;
+    const now = performance.now();
+    const dx = next.x - previous.x;
+    const dy = next.y - previous.y;
+    const direction = Math.abs(dx) &gt;= Math.abs(dy) ? (Math.sign(dx) || 1) : (Math.sign(dy) || 1);
+    pointer.x = next.x;
+    pointer.y = next.y;
+    pointer.active = true;
+    if (now - lastWindAt &gt;= 170) {
+      windPulses.push({ x: next.x, y: next.y, started: now, direction });
+      lastWindAt = now;
+    }
+    trees.forEach(tree =&gt; {
+      const currentDistance = Math.hypot(next.x - tree.crown.x, next.y - tree.crown.y);
+      tree.hovered = currentDistance &lt; tree.radius * .76;
+    });
+    hint.style.opacity = &#x27;.22&#x27;;
+  };
+  const syncControls = () =&gt; {
+    const config = configs[selectedIndex];
+    select.value = String(selectedIndex);
+    inputs.forEach(input =&gt; {
+      input.value = String(config[input.dataset.key]);
+      const output = root.querySelector(`#${input.id}-value`);
+      const suffix = input.dataset.key === &#x27;spread&#x27; ? &#x27;°&#x27; : [&#x27;amplitude&#x27;, &#x27;density&#x27;, &#x27;opacity&#x27;].includes(input.dataset.key) ? &#x27;%&#x27; : &#x27;&#x27;;
+      output.value = `${input.value}${suffix}`;
+      output.textContent = `${input.value}${suffix}`;
+    });
+    forkValue.value = String(config.forkNodes);
+    forkValue.textContent = String(config.forkNodes);
+    branchStatus.textContent = `当前树 ${selectedIndex + 1}：${config.forkNodes} 个分叉点，每个点伸出 ${config.count} 枝`;
+    forkRemove.disabled = config.forkNodes &lt;= 1;
+    forkAdd.disabled = config.forkNodes &gt;= 5;
+  };
+  select.addEventListener(&#x27;change&#x27;, () =&gt; {
+    selectedIndex = Number(select.value);
+    syncControls();
+    saveState();
+  });
+  inputs.forEach(input =&gt; {
+    input.addEventListener(&#x27;input&#x27;, () =&gt; {
+      configs[selectedIndex][input.dataset.key] = Number(input.value);
+      syncControls();
+      buildTrees();
+      saveState();
+    });
+  });
+  const changeForkNodes = delta =&gt; {
+    const config = configs[selectedIndex];
+    config.forkNodes = clamp(config.forkNodes + delta, 1, 5);
+    syncControls();
+    buildTrees();
+    saveState();
+  };
+  forkRemove.addEventListener(&#x27;click&#x27;, () =&gt; changeForkNodes(-1));
+  forkAdd.addEventListener(&#x27;click&#x27;, () =&gt; changeForkNodes(1));
+  addTreeButton.addEventListener(&#x27;click&#x27;, addTree);
+  saveButton.addEventListener(&#x27;click&#x27;, () =&gt; saveState(true));
+  trigger.addEventListener(&#x27;click&#x27;, () =&gt; {
+    windPulses.push({ x: width / 2, y: height / 2, started: performance.now(), direction: 1 });
+  });
+  stage.addEventListener(&#x27;pointermove&#x27;, event =&gt; {
+    const current = stagePoint(event);
+    if (dragState) {
+      const config = configs[dragState.treeIndex];
+      if (dragState.type === &#x27;branch&#x27;) {
+        config.branchOffsets[dragState.branchId] = {
+          x: dragState.startOffset.x + current.x - dragState.startPointer.x,
+          y: dragState.startOffset.y + current.y - dragState.startPointer.y
+        };
+      } else if (dragState.type === &#x27;tree-move&#x27;) {
+        config.positionOffset = {
+          x: dragState.startPosition.x + current.x - dragState.startPointer.x,
+          y: dragState.startPosition.y + current.y - dragState.startPointer.y
+        };
+      } else if (dragState.type === &#x27;tree-rotate&#x27;) {
+        const pointerAngle = Math.atan2(current.y - dragState.root.y, current.x - dragState.root.x);
+        const delta = Math.atan2(
+          Math.sin(pointerAngle - dragState.startPointerAngle),
+          Math.cos(pointerAngle - dragState.startPointerAngle)
+        );
+        config.angleOffset = dragState.startAngleOffset + delta;
+      }
+      pointer.x = current.x;
+      pointer.y = current.y;
+      pointer.active = true;
+      buildTrees();
+      return;
+    }
+    setPointer(event);
+    if (isReadOnly) {
+      const overTree = trees.some(tree =&gt; tree.hovered);
+      stage.style.cursor = overTree ? &#x27;none&#x27; : &#x27;default&#x27;;
+      if (windCursor) {
+        windCursor.style.left = `${current.x}px`;
+        windCursor.style.top = `${current.y}px`;
+        windCursor.classList.toggle(&#x27;is-visible&#x27;, overTree);
+      }
+      return;
+    }
+    const treeGesture = findTreeGesture(current);
+    const branchHit = treeGesture ? null : findDraggableBranch(current);
+    hoveredBranchId = branchHit?.branch.id || null;
+    hoveredTreeIndex = branchHit?.tree.index ?? -1;
+    stage.style.cursor = treeGesture?.type === &#x27;tree-move&#x27; ? &#x27;move&#x27; : treeGesture ? &#x27;grab&#x27; : branchHit ? &#x27;grab&#x27; : &#x27;crosshair&#x27;;
+  });
+  stage.addEventListener(&#x27;pointerdown&#x27;, event =&gt; {
+    const current = stagePoint(event);
+    const treeGesture = isReadOnly ? null : findTreeGesture(current);
+    if (treeGesture) {
+      selectedIndex = treeGesture.tree.index;
+      const config = configs[selectedIndex];
+      dragState = {
+        type: treeGesture.type,
+        pointerId: event.pointerId,
+        treeIndex: selectedIndex,
+        startPointer: current,
+        startPosition: { x: config.positionOffset.x, y: config.positionOffset.y },
+        root: { x: treeGesture.tree.root.x, y: treeGesture.tree.root.y },
+        startPointerAngle: Math.atan2(current.y - treeGesture.tree.root.y, current.x - treeGesture.tree.root.x),
+        startAngleOffset: config.angleOffset
+      };
+      stage.style.cursor = treeGesture.type === &#x27;tree-move&#x27; ? &#x27;move&#x27; : &#x27;grabbing&#x27;;
+      stage.setPointerCapture?.(event.pointerId);
+      syncControls();
+      hint.style.opacity = &#x27;.22&#x27;;
+      event.preventDefault();
+      return;
+    }
+    const hit = isReadOnly ? null : findDraggableBranch(current);
+    if (hit) {
+      selectedIndex = hit.tree.index;
+      const storedOffset = configs[selectedIndex].branchOffsets[hit.branch.id] || { x: 0, y: 0 };
+      dragState = {
+        type: &#x27;branch&#x27;,
+        pointerId: event.pointerId,
+        treeIndex: selectedIndex,
+        branchId: hit.branch.id,
+        startPointer: current,
+        startOffset: { x: storedOffset.x, y: storedOffset.y }
+      };
+      hoveredBranchId = hit.branch.id;
+      hoveredTreeIndex = hit.tree.index;
+      stage.style.cursor = &#x27;grabbing&#x27;;
+      stage.setPointerCapture?.(event.pointerId);
+      syncControls();
+      hint.style.opacity = &#x27;.22&#x27;;
+      event.preventDefault();
+      return;
+    }
+    setPointer(event);
+    if (isReadOnly) {
+      const clickedTree = trees
+        .filter(tree =&gt; tree.hovered)
+        .sort((a, b) =&gt; Math.hypot(pointer.x - a.crown.x, pointer.y - a.crown.y) - Math.hypot(pointer.x - b.crown.x, pointer.y - b.crown.y))[0];
+      if (clickedTree) releaseLeaves(clickedTree, performance.now());
+      return;
+    }
+    let closest = { index: selectedIndex, distance: Infinity };
+    trees.forEach(tree =&gt; {
+      const distance = Math.hypot(pointer.x - tree.crown.x, pointer.y - tree.crown.y);
+      if (distance &lt; closest.distance) closest = { index: tree.index, distance };
+    });
+    if (closest.distance &lt; trees[closest.index].radius) {
+      selectedIndex = closest.index;
+      syncControls();
+    }
+  });
+  const endDrag = event =&gt; {
+    if (!dragState || (event &amp;&amp; event.pointerId !== dragState.pointerId)) return;
+    dragState = null;
+    stage.style.cursor = &#x27;crosshair&#x27;;
+    saveState();
+  };
+  stage.addEventListener(&#x27;pointerup&#x27;, endDrag);
+  stage.addEventListener(&#x27;pointercancel&#x27;, endDrag);
+  stage.addEventListener(&#x27;pointerleave&#x27;, () =&gt; {
+    if (dragState) return;
+    pointer.active = false;
+    hoveredBranchId = null;
+    hoveredTreeIndex = -1;
+    stage.style.cursor = isReadOnly ? &#x27;default&#x27; : &#x27;crosshair&#x27;;
+    windCursor?.classList.remove(&#x27;is-visible&#x27;);
+    trees.forEach(tree =&gt; { tree.hovered = false; });
+  });
+  new ResizeObserver(resize).observe(stage);
+  syncTreeOptions();
+  syncControls();
+  resize();
+  requestAnimationFrame(draw);
+})();
+&lt;/script&gt;
+
+
+&lt;script src=&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  if (window.FloatingUIDOM == null) {
+    return;
+  }
+  const { autoUpdate, computePosition, flip, offset, shift, size } =
+    window.FloatingUIDOM;
+  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+  let lastPointerWasTouch = false;
+  let pinnedByTouch = false;
+
+  const getTrigger = (target) =&gt;
+    target?.nodeType === Node.ELEMENT_NODE
+      ? target.closest(&quot;[data-tooltip]&quot;)
+      : null;
+  const containsTarget = (trigger, target) =&gt;
+    target?.nodeType != null &amp;&amp; trigger.contains(target);
+  const getContent = (trigger) =&gt;
+    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
+  const getPlacement = (trigger) =&gt; {
+    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
+    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  };
+  const getTooltip = () =&gt; {
+    if (tooltip == null) {
+      tooltip = document.createElement(&quot;div&quot;);
+      tooltip.id = tooltipId;
+      tooltip.className = &quot;tooltip&quot;;
+      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) =&gt; {
+    const ids = new Set(
+      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute(&quot;aria-describedby&quot;);
+    } else {
+      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+    }
+  };
+  const clearOpenTimeout = () =&gt; {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) =&gt; {
+    clearOpenTimeout();
+    pinnedByTouch = false;
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating) =&gt; {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-width&quot;,
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-height&quot;,
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: &quot;fixed&quot;,
+    })
+      .then(({ x, y }) =&gt; {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = &quot;visible&quot;;
+      })
+      .catch(() =&gt; {
+        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) =&gt; {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = &quot;hidden&quot;;
+    floating.style.transform = &quot;translate(0, 0)&quot;;
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    autoUpdateCleanup = autoUpdate(trigger, floating, () =&gt; {
+      updatePosition(trigger, floating);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) =&gt; {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() =&gt; {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) =&gt; {
+    if (event.pointerType === &quot;touch&quot;) {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handlePointer = (event) =&gt; {
+    lastPointerWasTouch =
+      event.type === &quot;pointerdown&quot; &amp;&amp; event.pointerType === &quot;touch&quot;;
+  };
+  const handleTouchClick = (event) =&gt; {
+    const isTouch = event.pointerType === &quot;touch&quot; || lastPointerWasTouch;
+    lastPointerWasTouch = false;
+    if (!isTouch || event.detail === 0) {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (
+      trigger == null ||
+      !trigger.isConnected ||
+      getContent(trigger).length === 0 ||
+      (pinnedByTouch &amp;&amp; activeTrigger === trigger)
+    ) {
+      if (pinnedByTouch) {
+        closeTooltip();
+      }
+      return;
+    }
+    openTooltip(trigger);
+    pinnedByTouch = activeTrigger === trigger;
+    window.setTimeout(() =&gt; {
+      if (activeTrigger === trigger &amp;&amp; !trigger.isConnected) {
+        closeTooltip(false);
+      }
+    }, 0);
+  };
+  const handleLeave = (event) =&gt; {
+    if (pinnedByTouch) {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) =&gt; {
+    if (event.key === &quot;Escape&quot;) {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) =&gt; {
+    lastPointerWasTouch = false;
+    const trigger = getTrigger(event.target);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const destroy = () =&gt; {
+    closeTooltip(false);
+    lastPointerWasTouch = false;
+    document.removeEventListener(&quot;pointerover&quot;, handlePointerOpen);
+    document.removeEventListener(&quot;pointerdown&quot;, handlePointer);
+    document.removeEventListener(&quot;pointercancel&quot;, handlePointer);
+    document.removeEventListener(&quot;click&quot;, handleTouchClick);
+    document.removeEventListener(&quot;pointerout&quot;, handleLeave);
+    document.removeEventListener(&quot;focusin&quot;, handleFocusIn);
+    document.removeEventListener(&quot;focusout&quot;, handleLeave);
+    document.removeEventListener(&quot;keydown&quot;, handleKeyDown);
+    document.removeEventListener(&quot;contextmenu&quot;, handleContextMenu);
+    tooltip = null;
+  };
+
+  document.addEventListener(&quot;pointerover&quot;, handlePointerOpen);
+  document.addEventListener(&quot;pointerdown&quot;, handlePointer);
+  document.addEventListener(&quot;pointercancel&quot;, handlePointer);
+  document.addEventListener(&quot;click&quot;, handleTouchClick);
+  document.addEventListener(&quot;pointerout&quot;, handleLeave);
+  document.addEventListener(&quot;focusin&quot;, handleFocusIn);
+  document.addEventListener(&quot;focusout&quot;, handleLeave);
+  document.addEventListener(&quot;keydown&quot;, handleKeyDown);
+  document.addEventListener(&quot;contextmenu&quot;, handleContextMenu);
+  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const initialize = () =&gt; {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById(&quot;codex-visualization-lucide&quot;)
+    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
+})();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+<script>
+(() => {
+  const frame = document.querySelector('iframe');
+  const mode = new URLSearchParams(location.search).get('mode');
+  if (mode === 'background') document.body.classList.add('background-mode');
+  const applyMode = () => {
+    if (mode !== 'background') return;
+    const doc = frame.contentDocument;
+    if (!doc) return;
+    doc.documentElement.style.background = '#fff';
+    doc.body.style.padding = '0';
+    doc.body.style.background = '#fff';
+    ['.canopy-control-lab__head', '.canopy-control-lab__controls', '.canopy-control-lab__status', '.canopy-control-lab__hint'].forEach((selector) => {
+      const node = doc.querySelector(selector);
+      if (node) node.style.display = 'none';
+    });
+    const root = doc.getElementById('canopy-control-lab');
+    const stage = doc.querySelector('.canopy-control-lab__stage');
+    const canvas = stage?.querySelector('canvas');
+    if (root) root.style.height = '100vh';
+    if (stage) {
+      stage.style.height = '100vh';
+      stage.style.minHeight = '100vh';
+    }
+    if (canvas) {
+      canvas.style.height = '100vh';
+      canvas.style.minHeight = '100vh';
+    }
+  };
+  frame.addEventListener('load', applyMode);
+  applyMode();
+  addEventListener('storage', (event) => {
+    if (mode === 'background' && event.key === 'camphor-canopy-studio-v3') frame.contentWindow.location.reload();
+  });
+})();
+</script>
+</body>
+</html>
