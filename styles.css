@@ -326,10 +326,11 @@ html[lang="zh-CN"] .work-tags{margin-top:32px;flex-wrap:wrap}
 html[lang="zh-CN"] .me-footer-copy p{margin:26px 0 20px}
 /* About: shared center axes, with justified prose in both languages. */
 .me-intro h1{justify-content:center}
-.me-intro h2,.me-intro .school,.me-footer-copy h2{text-align:center}
+.me-intro h2,.me-intro .school{text-align:center}
 .me-intro>p{margin-inline:auto}
-.me-intro>p:not(.school),.me-footer-copy p{text-align:justify;text-align-last:left}
-.me-footer-copy a,.me-footer-copy button{margin-inline:auto}
+.me-intro>p:not(.school){text-align:justify;text-align-last:left}
+.me-footer-copy,.me-footer-copy h2,.me-footer-copy p{text-align:left;text-align-last:left}
+.me-footer-copy a,.me-footer-copy button{margin-inline:0}
 .gallery-board[data-category="visual"] .gallery-frame-jump.is-next{right:1%;bottom:18.8%;width:3.2%;height:7.1%}
 .gallery-board[data-category="architecture"][data-category-start] .gallery-frame-jump.is-prev{left:.4%;top:50%;bottom:auto;width:3.4%;height:6%;min-height:38px;transform:translateY(-50%);border:1px solid #dedede;background:#fff;color:#9a9a9a;font-size:14px}
 .gallery-board[data-category="architecture"][data-category-start] .gallery-frame-jump.is-prev::after{content:"视觉 ←"}
@@ -353,7 +354,7 @@ html[lang="en"] .gallery-board[data-category="architecture"][data-category-start
   .gallery-preview{height:630px}
   .visit-gallery{top:496px}
   .me-footer{display:flex;flex-direction:column;align-items:center;width:100%;height:auto;min-height:0;padding:184px 22px 34px}
-  .me-footer-copy{position:relative;left:auto;top:auto;width:100%;max-width:620px;text-align:center}
+  .me-footer-copy{position:relative;left:auto;top:auto;width:100%;max-width:620px;text-align:left}
   .me-footer-copy p{line-height:1.55}
   .me-footer-meta{position:relative;right:auto;bottom:auto;display:grid;gap:8px;width:100%;margin-top:34px;text-align:center;line-height:1.45}
 }
