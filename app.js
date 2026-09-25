@@ -475,6 +475,28 @@
       collideThenBurst();
     }, { passive: true });
 
+    if (!reducedMotion && matchMedia('(hover:none) and (pointer:coarse)').matches) {
+      let touchStartY = null;
+      section.addEventListener('touchstart', (event) => {
+        touchStartY = event.touches[0]?.clientY ?? null;
+      }, { passive: true });
+      section.addEventListener('touchend', (event) => {
+        if (touchStartY === null) return;
+        const distance = touchStartY - (event.changedTouches[0]?.clientY ?? touchStartY);
+        touchStartY = null;
+        if (Math.abs(distance) < 24) return;
+        kickBalls(distance > 0 ? 1 : -1);
+        collideThenBurst();
+      }, { passive: true });
+      section.addEventListener('touchcancel', () => { touchStartY = null; }, { passive: true });
+      const entrance = new IntersectionObserver((entries) => {
+        if (!entries[0].isIntersecting) return;
+        kickBalls(1);
+        entrance.disconnect();
+      }, { threshold: .35 });
+      entrance.observe(section);
+    }
+
     new ResizeObserver(() => {
       const nextTrackWidth = track.clientWidth || 340;
       const nextTrackHeight = track.clientHeight || 164;
